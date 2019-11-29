@@ -7,13 +7,9 @@ const decorators = {}
 
 export function activate(context: vscode.ExtensionContext) {
   console.log('Congratulations, your extension "lnd-theme" is now active!');
-  vscode.window.showInformationMessage('Loaded');
   createColorDecorators()
   attachEventHandlers()
-
-	let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {});
-
-	context.subscriptions.push(disposable);
+  updateThemeColors()
 }
 
 function createColorDecorators() {
@@ -50,7 +46,7 @@ function createColorDecorators() {
 }
 
 function attachEventHandlers() {
-  vscode.window.onDidChangeActiveTextEditor(updateThemeColors)
+  // vscode.window.onDidChangeActiveTextEditor(updateThemeColors)
   vscode.workspace.onDidChangeTextDocument(updateThemeColors)
 }
 

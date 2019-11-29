@@ -1,0 +1,10 @@
+{
+  "Styled components string interpolation": {
+    "scope": "javascript,typescript",
+    "prefix": "$t",
+    "body": [
+      "${({ theme }) => theme.$1}"
+    ],
+    "description": "Inserts theme prop destructuring for use in styled components"
+  }
+}
