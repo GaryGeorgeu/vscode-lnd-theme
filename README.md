@@ -1,2 +1,2 @@
 # vscode-lnd-theme
-Syntax highlighting for use with https://github.com/lessondesk/theme
+An extension for vscode that adds highlighting for color values in https://github.com/lessondesk/theme
