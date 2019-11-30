@@ -3,11 +3,12 @@
 	"displayName": "lnd-theme",
 	"description": "",
 	"version": "0.0.1",
+	"publisher": "garygeorgeu",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
 	"categories": [
-    "Snippets",
+		"Snippets",
 		"Other"
 	],
 	"activationEvents": [
@@ -21,25 +22,25 @@
 				"command": "extension.helloWorld",
 				"title": "Hello World"
 			}
-    ],
-    "snippets": [
-      {
-        "language": "typescript",
-        "path": "./snippets/global.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/global.json"
-      },
-      {
-        "language": "css",
-        "path": "./snippets/global.json"
-      },
-      {
-        "language": "styled-css",
-        "path": "./snippets/global.json"
-      }
-    ]
+		],
+		"snippets": [
+			{
+				"language": "typescript",
+				"path": "./snippets/global.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/global.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/global.json"
+			},
+			{
+				"language": "styled-css",
+				"path": "./snippets/global.json"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
@@ -55,12 +56,16 @@
 		"@types/vscode": "^1.40.0",
 		"glob": "^7.1.5",
 		"mocha": "^6.2.2",
-		"typescript": "^3.6.4",
 		"tslint": "^5.20.0",
+		"typescript": "^3.6.4",
 		"vscode-test": "^1.2.2"
 	},
 	"dependencies": {
 		"@lessondesk/theme": "^1.0.0",
 		"color": "^3.1.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GaryGeorgeu/vscode-lnd-theme"
 	}
 }
