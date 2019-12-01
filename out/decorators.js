@@ -29,6 +29,8 @@ function createColorDecorators() {
 exports.createColorDecorators = createColorDecorators;
 function updateThemeColors() {
     const editor = vscode.window.activeTextEditor;
+    if (!editor)
+        return;
     const text = editor.document.getText();
     Object.entries(decorators).forEach(([key, decorator]) => {
         const regex = new RegExp(`(theme\\.)?colors\\.${escapeRegExp(key)}`, 'gim');

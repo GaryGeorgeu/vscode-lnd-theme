@@ -3,9 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const vscode = require("vscode");
 const { createColorDecorators, updateThemeColors } = require('./decorators');
 const { addCompletions } = require('./completions');
+const { addColorConverter } = require('./color-converter');
 function activate(context) {
     console.log('Congratulations, your extension "lnd-theme" is now active!');
     addCompletions(context);
+    addColorConverter(context);
     createColorDecorators();
     attachEventHandlers();
     updateThemeColors();

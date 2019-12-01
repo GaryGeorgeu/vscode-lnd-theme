@@ -18,10 +18,10 @@
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
+      {
+        "command": "extension.convertColorsToTheme",
+        "title": "Convert selected colors to lnd-theme destructured colors"
+      }
 		],
 		"snippets": [
 			{

@@ -35,6 +35,7 @@ export function createColorDecorators() {
 
 export function updateThemeColors() {
   const editor = vscode.window.activeTextEditor
+  if (!editor) return
   const text = editor.document.getText()
 
   Object.entries(decorators).forEach(([key, decorator]: [string, vscode.TextEditorDecorationType]) => {
