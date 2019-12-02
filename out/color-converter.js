@@ -32,7 +32,8 @@ function findClosestColor(value) {
     return colorReferences.reduce((lowest, current) => {
         const similarity = calculateSimilarity(current.value.red(), color.red()) +
             calculateSimilarity(current.value.blue(), color.blue()) +
-            calculateSimilarity(current.value.green(), color.green());
+            calculateSimilarity(current.value.green(), color.green()) +
+            calculateSimilarity(current.value.alpha() * 255, color.alpha() * 255);
         return similarity < lowest.similarity
             ? { similarity, value: current }
             : lowest;

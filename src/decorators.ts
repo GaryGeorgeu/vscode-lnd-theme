@@ -18,6 +18,7 @@ export function createColorDecorators() {
     colorVariants.forEach(variantKey => {
       createDecorator(`${key}.${variantKey}`, color[variantKey])
     })
+    
   }
 
   function createDecorator(key, color) {

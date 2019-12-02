@@ -1,4 +1,5 @@
 import * as vscode from 'vscode'
+import { theme } from '@lessondesk/theme'
 
 const { createColorDecorators, updateThemeColors } = require('./decorators')
 const { addCompletions } = require('./completions')

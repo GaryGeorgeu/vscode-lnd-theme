@@ -17,11 +17,17 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"languages": [
+			{
+				"id": "jsx",
+				"extensions": [".jsx"]
+			}
+		],
 		"commands": [
-      {
-        "command": "extension.convertColorsToTheme",
-        "title": "Convert selected colors to lnd-theme destructured colors"
-      }
+			{
+				"command": "extension.convertColorsToTheme",
+				"title": "Convert selected colors to lnd-theme destructured colors"
+			}
 		],
 		"snippets": [
 			{
@@ -33,11 +39,11 @@
 				"path": "./snippets/global.json"
 			},
 			{
-				"language": "css",
+				"language": "jsx",
 				"path": "./snippets/global.json"
 			},
 			{
-				"language": "styled-css",
+				"language": "css",
 				"path": "./snippets/global.json"
 			}
 		]
